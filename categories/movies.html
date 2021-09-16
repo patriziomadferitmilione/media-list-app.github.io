@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <title>Movies</title>
+</head>
+<body>
+
+    <ul class="nav bg-dark">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./books.html">Books</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./songs.html">Songs</a>
+        </li>
+    </ul>
+
+    <h1 class="text-center pt-5 pb-3 bg-dark text-warning m-0">
+        Movies
+    </h1>
+
+    <section class="bg-dark p-3">
+        <div class="container mt-4 text-warning bg-dark">
+                <form id="movie-form">
+                    <div class="form-group m-1">
+                        <label for="title">Title</label>
+                        <input type="text" id="title" class="form-control">
+                    </div>
+                    <div class="form-group m-1">
+                        <label for="genre">Genre</label>
+                        <select class="form-select" aria-label="Default select example" id="genre">
+                            <option selected></option>
+                            <option value="Action">Action</option>
+                            <option value="Anime">Anime</option>
+                            <option value="Comedy">Comedy</option>
+                            <option value="Colossal">Colossal</option>
+                            <option value="Documentary">Documentary</option>
+                            <option value="Fantasy">Fantasy</option>
+                            <option value="Horror">Horror</option>
+                            <option value="Romantic">Romantic</option>
+                            <option value="Thriller">Thriller</option>
+                            <option value="Western">Western</option>
+                          </select>
+                    </div>
+                    <input type="submit" value="Add Movie" class="btn btn-primary btn-clock mt-3">
+                </form>
+                <table class="table table-striped mt-5 text-warning mb-5 pb-5">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Genre</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="movie-list"></tbody>
+                </table>
+        </div>
+    </section>
+
+    <script src="../movie-script.js"></script>
+</body>
+</html>
